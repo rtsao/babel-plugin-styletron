@@ -1,0 +1,24 @@
+{
+  "name": "babel-plugin-styletron",
+  "version": "2.5.1",
+  "description": "Babel plugin for Styletron",
+  "author": "Ryan Tsao <ryan.j.tsao@gmail.com>",
+  "homepage": "https://github.com/rtsao/styletron",
+  "repository": "git@github.com:rtsao/styletron.git",
+  "bugs": "https://github.com/rtsao/styletron/issues",
+  "main": "./lib/index.js",
+  "scripts": {
+    "transpile": "buble -i src -o lib",
+    "pretest": "npm run transpile",
+    "test": "node lib/test/index.js",
+    "prepublish": "npm run transpile"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "6.x",
+    "babel-plugin-syntax-jsx": "^6.13.0",
+    "buble": "^0.15.2",
+    "tape": "^4.6.3"
+  },
+  "license": "MIT"
+}
